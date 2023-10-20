@@ -1,0 +1,10 @@
+This shares an example "parser" for converting instrument raw data from a "repeatable" form output by a lab instrument to "structured" rows/columns for analysis and visualization of the data. The example data are based on the output from an [MTS tensile tester](https://www.mts.com/en/products/materials/dynamic-materials-test-systems) to measure peel strength of a fastening system such as a hook and loop or adhesive temporary bond between two materials. Each output file contains the results of testing multiple specimens (aka samples), and each file represents testing of the same material combination (e.g. an experimental "run"). The demonstration files represent results from two experimental runs or conditions where the type of hook or adhesive is varied. 
+
+Note that relative to actual instrument data from MTS, this example simplifies the with-file nomenclature to refer to each file as being an "analysis" containing "samples" instead of MTS "sample" and "specimen" nomenclature. Confusingly, MTS longstanding practice is to refer to the files as a "sample" and the individual tests within the file as "specimens." In our preferred nomenclature, analyses are conducted on samples from runs, where each file  corresponds to an experimental run using different conditions such as incoming raw materials, processing condition. The files contain tests on multiple "samples" representing replicate tests from the run. To avoid confusion with the terminology, we replaced the MTS terminology with ours within the files.
+
+The parser generates two outputs:
+* A rows/columns file with parameters such as Peak Load pre-calculated by the MTS instrument software. Each row is from one sample, and the run ID (aka experimental condition ID) is read from a header cell in the file
+* A rows/columns file with stacked raw data from all samples. This file contains Run ID and Sample ID key columns along with an integer "xxx ID" representing the time order of the raw data points as the fastening system is pulled apart in the tester
+
+J.D. Landgrebe,
+Data-Delve Engineer LLC

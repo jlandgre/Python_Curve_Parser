@@ -1,0 +1,41 @@
+BeginAnalysis,,
+_AnalysisName," ""Run101620-2_Material Y_Analysis 94624.mss""",
+_MethodName," ""Method 123468_06-Peel Strength.msm""",
+InitialSpeed,305,"  ""mm/min"""
+DataRate,50,"  ""Hz"""
+EndPoint,40,"  ""mm"""
+GageLength,50,"  ""mm"""
+PeelEndExt,40,"  ""mm"""
+StartPoint,3,"  ""mm"""
+BeginSample,,
+AverageLoad,1.07,"  ""N"""
+AvgNPeaks,2.66,"  ""N"""
+PeakLoad,3.04,"  ""N"""
+PeelEnd,402,"  """""
+PeelStart,38,"  """""
+BeginData,,
+_Load, SlackExt,
+N," ""mm""",
+0,0.001,
+0.03,0.127,
+0.3,0.193,
+0.4,0.269,
+0.03,0.357,
+EndData,,
+EndSample,,
+BeginSample,,
+AverageLoad,1.18,"  ""N"""
+AvgNPeaks,3.12,"  ""N"""
+PeakLoad,3.2,"  ""N"""
+PeelEnd,401,"  """""
+PeelStart,37,"  """""
+BeginData,,
+_Load, SlackExt,
+N," ""mm""",
+0,0.001,
+0.02,0.102,
+0.2,0.162,
+0.15,0.233,
+EndData,,
+EndSample,,
+EndAnalysis,,
